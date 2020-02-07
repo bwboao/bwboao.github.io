@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+h3{
+	margin:0
+}
+
+.art-tag{
+	font-size: 0.6em;
+	padding: 5px 5px 4px 5px;
+	margin: 0 2px 0 2px;
+	border-radius: 1em;
+	background-color: #999;
+	color: white;
+}
+
+a{
+
+}
