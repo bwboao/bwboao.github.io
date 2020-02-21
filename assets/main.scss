@@ -9,14 +9,32 @@ h3{
 }
 
 .art-tag{
+	display: inline-block;
 	font-size: 0.6em;
-	padding: 5px 5px 4px 5px;
-	margin: 0 2px 0 2px;
-	border-radius: 1em;
+	padding: 1px 10px 2px 10px;
+	margin: 0 2px 0 5px;
+	border-radius: 1.2em;
 	background-color: #999;
 	color: white;
+	position: relative;
+	top: -2px;
 }
 
+.art-post{
+	box-shadow: 0 0 5px #bbb;
+	border-radius: 0.2em;
+	padding: 1em;
+}
+
+a.art-link{
+	text-decoration: none;
+	text-decoration-line: none;
+	box-decoration-break: unset;
+	color: black;
+}
+a.art-link:visited{
+	color: black;
+}
 a{
 
 }

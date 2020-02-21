@@ -75,6 +75,11 @@ defaults:
       type: "posts"
     values:
       layout: "dev_post"
+  - scope:
+      path: ""
+      type: "computer_science"
+    values:
+      layout: "post"
 # show excerpt
 show_excerpts: true
 

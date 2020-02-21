@@ -11,23 +11,25 @@ layout: art_default
   {%- if site.arts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Arts" }}</h2>
     <ul class="post-list">
-      {%- for art in site.arts -%}
+      {%- for art in site.arts reversed-%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <h3>
-          <a class="post-link" href="{{ art.url | relative_url }}">
-            {{ art.title | escape }}
-          </a>
-        </h3>
-        <span class="post-meta">{{ art.date | date: date_format }}</span>
-        {%- if art.tags.size > 0 -%}
-          {%- for tag in art.tags -%}
-          <span class="art-tag">{{ tag | escape}} </span>
-          {%- endfor -%}
-        {%- endif-%}
-        {%- if site.show_excerpts -%}
-          {{ art.excerpt }}
-        {%- endif -%}
+        <a class="art-link" href="{{ art.url | relative_url }}"> 
+        <div class="art-post">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ art.date | date: date_format }}</span>
+          {%- if art.tags.size > 0 -%}
+            {%- for tag in art.tags -%}
+            <span class="art-tag">{{ tag | escape}} </span>
+            {%- endfor -%}
+          {%- endif-%}
+          {%- if site.show_excerpts -%}
+            {{ art.excerpt }}
+          {%- endif -%}
+          {%- if art.img-%}
+            {{ art.img | escape | markdownify}}
+          {%- endif -%}
+        </div>
+        </a>
       </li>
       {%- endfor -%}
     </ul>
