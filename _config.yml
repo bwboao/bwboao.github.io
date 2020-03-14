@@ -21,17 +21,20 @@
 title: 被棉被反芻
 email: bwboao.cs05@g2.nctu.edu.tw
 description: >- # this means to ignore newlines until "baseurl:"
-  紀錄
+  紀錄，note notes noticed
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bwboao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bwboao
 github_username:  bwboao
-author: 白白，21歲的廢物
+author: 白白，NCTU
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# parser
+# markdown: CommonMarkGhPages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

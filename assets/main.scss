@@ -4,6 +4,8 @@
 
 @import "minima";
 
+$wrap_width: 850px;
+
 h3{
 	margin:0
 }
@@ -36,5 +38,70 @@ a.art-link:visited{
 	color: black;
 }
 a{
+}
 
+#info-container{
+	display: block;
+	box-shadow: 0 0 5px #bbb;
+	padding: 5px 20px;
+	height: 300px;
+	width: 200px;
+	position: absolute;
+	/*left: 10px;*/
+	right: calc(( 100vw - #{$wrap_width} )/2  + 20px );
+	top: 78px;
+	border-radius: 3px;
+}
+#info-head{
+	width: 144px;
+	margin: 10px auto;
+	overflow: hidden;
+	border-radius: 50%;
+	box-shadow: 0 0 5px #eee
+}
+#info-name{
+	text-align: center;
+}
+#info-intro{
+	color: #777;
+	font-size: 0.7em;
+}
+
+
+.wrapper{
+	max-width: $wrap_width;
+}
+
+.pagination-box{
+	border-top: 1px solid #e8e8e8;
+	padding: 5px 0;
+	position: relative;
+	min-height: 70px;
+	div{
+		display: inline-block;
+	}
+	.next-page{
+		position: absolute;
+		right: 0;
+		text-align: right;
+	}
+	p{
+		color: #999;
+		font-size: 0.8em;
+	}
+}
+
+
+.site-footer{
+	$height: 20px;
+	border: none;
+	padding: 5px 0 5px 0;
+	background-color: #eee;
+
+	.footer-col{
+		margin:  2px 0;
+	}
+	ul{
+		margin: 0;
+	}
 }

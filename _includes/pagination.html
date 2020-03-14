@@ -1,0 +1,14 @@
+<div class="pagination pagination-box">
+	{%- if page.previous != nil -%}
+	<div class="pagination prev-page">
+		<a href="{{page.previous.url}}">❮ {{page.previous.title}}</a>
+		<p>{{page.previous.date | date: "%b %-d,%Y"}}</p>
+	</div>
+	{%- endif -%}
+	{%- if page.next != nil -%}
+	<div class="pagination next-page">
+		<a href="{{page.next.url}}">{{page.next.title}} ❯</a>
+		<p>{{page.next.date | date: "%b %-d,%Y"}}</p>
+	</div>
+	{%- endif -%}
+</div>
