@@ -1,5 +1,5 @@
 ---
-title: 關於交大的修課經驗
+title: 關於交大UX的課程
 tags: ["computer science","note","NCTU","UX","HCI"]
 draft: true
 ---
