@@ -21,7 +21,9 @@ layout: dev_default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
+          <div class="post-excerpt">
           {{ post.excerpt }}
+          </div>
         {%- endif -%}
       </li>
       {%- endfor -%}

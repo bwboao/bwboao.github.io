@@ -22,6 +22,7 @@ title: 被棉被反芻
 email: bwboao.cs05@g2.nctu.edu.tw
 description: >- # this means to ignore newlines until "baseurl:"
   紀錄，note notes noticed
+  沒人記得的事，就如同沒有發生過。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bwboao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: bwboao
@@ -83,6 +84,7 @@ defaults:
       type: "computer_science"
     values:
       layout: "post"
+      markdown: "false"
 # show excerpt
 show_excerpts: true
 

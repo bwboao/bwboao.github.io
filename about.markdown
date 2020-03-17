@@ -26,20 +26,21 @@ You can find the source code for Jekyll at GitHub:
 	白白
 </p>
 <p class="about" id="info-intro">
-CS、塗圖、HCI跟UX小渣渣，希望可以進步 各種方面來說都是。
+NCTU | CS、塗圖、HCI跟UX小渣渣，希望可以進步 各種方面來說都是。
 </p>
 </div>
 
-> 沒有人記得的事，就如同沒有發生過。
+> 人生就像被棉被反芻，被不情願的吐出來，再被棉被吞下去
 
-所以這裡就記下曾經完成的，以免記憶只剩下還沒有做的事。
+Life is bed's rumination
+
 
 
 This site have these parts:
 
-- [被棉被反芻](/)
-	- main site
-- [arts](/arts)
-	- drawing some stuff
+- main site
+	- [被棉被反芻](/)
+- drawing some stuff
+	- [被棉被反芻-arts](/arts)
 
 The site is still constructing, may have layout bugs(a lot).

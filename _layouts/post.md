@@ -14,9 +14,16 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
   </header>
+  
+
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+    {{ content}}
+  </div>
+
+  <div class="toc-box">
+    <p>Table of Content</p>
+    {% include toc.html html=content sanitize=true class="toc" h_max=3%}
   </div>
 
   {%- if site.disqus.shortname -%}
@@ -24,6 +31,6 @@ layout: default
   {%- endif -%}
 
   {%- include pagination.html -%}
-  
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
