@@ -29,6 +29,28 @@ layout: default
             {%- endfor -%}
           {%- endif-%}
         </div>
+        <div class="post-word-num">
+          {%assign post_words = post.content | strip_html | size %}
+          <span class="post-meta">Symbols count: 
+            {% if post_words < 1000 %}
+              {{post_words}}
+            {% else %}
+              {{post_words | divided_by: 1000.0 | round: 1}}K
+            {% endif %}
+           ,</span>
+          <span class="post-meta">Estimated reading time: 
+            {% if post_words < 18000 %}
+              {{post_words | divided_by: 300}} mins
+            {% else %}
+              {{post_words | divided_by: 18000.0 | round: 1}} hrs
+            {% endif %}~
+            {% if post_words < 15000 %}
+              {{post_words | divided_by: 250}} mins
+            {% else %}
+              {{post_words | divided_by: 15000.0 | round: 1}} hrs
+            {% endif %}
+        </span>
+        </div>
         {%- if site.show_excerpts -%}
           <div class="post-excerpt">
           {{ post.excerpt }}

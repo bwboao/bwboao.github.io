@@ -98,7 +98,7 @@ a{
 	text-decoration: none;
 	&:hover{
 		transition: font-weight;
-		transition-duration: 0.3s;
+		transition-duration: 0.2s;
 		transition-timing-function: ease-in-out;
 		font-weight: 600;
 		text-decoration: none;
@@ -164,8 +164,20 @@ a{
 
 .post-tags{
 	// margin-top: 5px;
-	margin-bottom: 5px;
-	// margin-left: 10px;
+	// margin-bottom: 5px;
+	margin-left: 6px;
+	border-left: 1px solid #ccc;
+	padding-left: 4px;
+}
+.post-word-num{
+	margin-bottom: 10px;
+	margin-left: 6px;
+	margin-top: -5px;
+	border-left: 1px solid #ccc;
+	padding-left: 4px;
+}
+.post-meta{
+	font-size: 0.8em;
 }
 $post_width: 720px;
 // Post
@@ -242,7 +254,7 @@ $post_width: 720px;
 		left: 0;
 		// background-color: ;
 		transform: scaleX(0) ;
-		transition-duration: 0.3s;
+		transition-duration: 0.2s;
 		transform-origin: left;
 		transition-timing-function: ease-in-out;
 	}
