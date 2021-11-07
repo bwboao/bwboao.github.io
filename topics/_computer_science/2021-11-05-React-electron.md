@@ -256,28 +256,6 @@ npm run build
 npm run package
 ```
 
-## store things
-
-fs and locallStorage
-
-## contenteditable
-
-maintaining your own contenteditable on React is a pain
-
-## 小心得
-什麼東西都可以是object 善用他
-
-## 遇到的困難 
-
-### fs.existssync is not a function electron react 
-
-|- This is a big problem if you want to call ipcRender on render process in ReactJS 
-
-### caret and selection
-
-https://pretagteam.com/question/why-is-my-contenteditable-caret-jumping-to-the-end-in-chrome
-
-有時候caret會不見
 
 ### electron-builder on Windows
 
@@ -287,3 +265,7 @@ https://pretagteam.com/question/why-is-my-contenteditable-caret-jumping-to-the-e
 |- electron-builder: module not finde: npm install --save
 
 ## 資源
+- React 官網
+- electron 官網
+- electron-builder 官網
+- 善用google
