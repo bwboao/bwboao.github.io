@@ -20,7 +20,7 @@ You can find the source code for Jekyll at GitHub:
 
 <div class="about" id="info-container">
 <div class="about" id="info-head">
-<img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t1.0-9/78044394_2234422519995604_3375545906098077696_o.jpg?_nc_cat=109&_nc_oc=AQlbZTyY_5_ElaqKDacFsQjXBK6vI18X4b1m6nzbuiEzDuLFp4epP6Wq7jNL3vjtITw&_nc_ht=scontent.frmq2-2.fna&oh=2b2175d73ab6cab70646e711618df87d&oe=5ECAEEC8">
+<img src="">
 </div>
 <p class="about" id="info-name">
 	白白
