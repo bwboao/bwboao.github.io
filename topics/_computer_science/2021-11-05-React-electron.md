@@ -28,7 +28,7 @@ title: React + Electron 桌面app實作(1)
 React是現在很流行的library，也可以當是一個框架(我沒有很了解其中的差異)。將東西都當成component(元件)，可以重複利用，設定component的state(狀態)等等。官方的文件寫的滿好的，如果是新手建議從文件看起，
 
 ### 開始
-因為我也是新手，所以是參考最簡單的方法，這邊可以看下方的環境架設，因為是一起做的。另外我這次都是用[`npm`](https://docs.npmjs.com/cli/v7/commands/npm)來管理套件，如果是用`yarn`的，抱歉了。
+因為我也是新手，所以是參考最簡單的方法，這邊可以看下方的環境架設，因為是一起做的。另外我這次都是用[`npm`](https://docs.npmjs.com/cli/v7/commands/npm)來管理套件，如果是用`yarn`的，抱歉了(指令應該很像)。
 
 ```sh
 # use create-react-app to create a directory
