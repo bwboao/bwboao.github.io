@@ -2,6 +2,8 @@
 title: React + Electron 桌面app實作(1)
 ---
 
+如何架起react+electron環境
+
 ## TLDR;
 
 很醜的code: [github](https://github.com/bwboao/noting_app)
@@ -259,13 +261,30 @@ npm run package
 
 ### electron-builder on Windows
 
-- package 
-|- electron-builder: permission: windows defender 
-|- electron-builder: permission(second build): need to close all electron 
-|- electron-builder: module not finde: npm install --save
+我在用`electron-builder`時遇到了一些問題，但當時狀況有點混亂，我同時改了很多東西，就大致紀錄一下
+
+#### 1. permission: windows defender
+可能問題:[github issue](https://github.com/electron-userland/electron-builder/issues/5759)
+我可能在build的欄位，或是哪邊沒有設定對檔案名，雖然我後來都刪掉了發現也可以跑，但第一次跑的時候被Windows Defender認定是病毒，所以在跑出來的時候就會被刪掉，`electron-builder`也會跟你說permission denied。
+
+#### 2. permission denied again
+之後某次build的時候，它還是跟我說是permission denied，但理論上我已經修正了問題。後來我發現工作管理員中已經有複數個electron正在執行，可能是前幾次build成功後我打開的electron app是寫壞的，它沒有出現任何視窗，但是仍在背景執行中，所以停掉所有process之後就可以再次打包了。
+
+#### 3. module not found
+可能的問題: [stackoverflow](https://stackoverflow.com/questions/35682131/electron-packager-cannot-find-module)
+這段是我有點不明所以的部分，因為是我幾次都pacakge成功之後，突然一次它噴出我有某個module not found。注意不是在打包成功後出現，而是在打包時出現的，這好像是兩種問題。
+
+後來我是全部都重新乖乖下錯誤說有缺的module
+```sh
+npm intall --save <module_name>
+```
+但因為我那時後重新安裝整個`npm module`資料夾，還安裝`yarn`等等，所以我不確定是哪個方法修正了這個問題。
+
+
+還有遇到的問題，接下一篇part2好了。
 
 ## 資源
-- React 官網
-- electron 官網
-- electron-builder 官網
-- 善用google
+- React [官網docs](https://reactjs.org/docs/)
+- electron [官網](https://www.electronjs.org/)
+- electron-builder [官網](https://www.electron.build/)
+- 善用google，和github上面的issue有時候會遇到有人有一樣的問題。
