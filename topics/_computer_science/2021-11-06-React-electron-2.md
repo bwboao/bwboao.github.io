@@ -107,7 +107,7 @@ this.inputRef = Reat.createRef();
     }
 ```
 ### 但我們打的不是英文 composition
-都解決完之後發現，我們正在打中文!?，中文不管是注音、倉頡、拼音等等都跟英文不一樣，我們會先打出一串字串之後，按下Enter或是空白鍵等等。那上面的做法就會導至打出來的字重複，或是意料之外的動作。這時候就得判斷是否正在composition。
+都解決完之後發現，我們正在打中文!?，中文不管是注音、倉頡、拼音等等都跟英文不一樣，我們會先打出一串字串之後，按下Enter或是空白鍵等等。那上面的做法就會導至打出來的字重複，或是意料之外的動作。這時候就得判斷是否正在[composition](https://developer.mozilla.org/en-US/docs/Web/API/Element/compositionstart_event)。
 ```jsx
 // function
 handleCompositionStart(){

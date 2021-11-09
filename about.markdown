@@ -20,7 +20,7 @@ You can find the source code for Jekyll at GitHub:
 
 <div class="about" id="info-container">
 <div class="about" id="info-head">
-<img src="">
+<img src="/assets/img/head.jpg">
 </div>
 <p class="about" id="info-name">
 	白白
